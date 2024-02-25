@@ -1,0 +1,14 @@
+/* CSS ASSIGNMENT STEP 1 --- FONT-FAMILY AND FONT SIZE */
+
+body { /* HERE WE ARE CHANGING OUR FONT SIZE TO LARGE AND OUR FONT TO TIME NEW ROMAN */
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CSS ASSIGNMENT STEP 2 --- INPUT WIDTH, MARGIN BETWEEN INPUTS, BORDER OF THE INPUTS, AND BORDER RADIUS FOR THE INPUTS */
+.rsvp {
+    width: 100%; /* MAKE OUR INPUT BOXES THE LENGTH OF THE BROWSER */
+    margin-bottom: 8px; /* HERE WE DECLARE THE DISTANCE OF OUR MARGIN FOR OUR TEXT BOXES */
+    border: 2px groove red;
+    border-radius: 30px;
+}
