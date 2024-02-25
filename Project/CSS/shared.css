@@ -1,3 +1,9 @@
+/* .caprasimo-regular {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  */
 /*  GENERIC STYLE */
 
 html {
@@ -23,7 +29,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Caprasimo', sans-serif;
 }
 
 h1 {
@@ -165,10 +171,11 @@ section {
     word-spacing: 21pt;
     font-size: 4.5em;
     text-align: left;
-    font-family: impact, sans-serif;
+    font-family: "Caprasimo", serif;
     line-height: 2;
     font-weight: 900;
     border: 5px double #fff;
+    border-radius: 10px 100px / 120px;
     padding: 10px;
 }
 
