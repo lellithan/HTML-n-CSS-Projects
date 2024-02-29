@@ -8,14 +8,16 @@ h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
     font-family: "Trebuchet MS", Optima; /* Setting the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
-    margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: #1a1a1a;
+    /* margin-top: 3%; /* Adds a small margin above h1 elements */
+    color: white;
+    background-color: rgba(228, 18, 18, 0.911);
+    border-radius: 15px;
 }
 
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
-    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    /*transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
@@ -53,7 +55,8 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: blue; /* This ensure all links are blue */
+    color: black; /* This ensure all links are blue */
+    font-weight: bolder;
 }
 
 /* Quotation elements */
@@ -63,7 +66,7 @@ q {
 
 /* Image elements */
 img {
-    filter: grayscale(75%); /* This rids our pictures of 75 */
+    filter: grayscale(10%); /* This rids our pictures of 75 */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     height: 340px; /* Sets the height of all images */
@@ -114,7 +117,7 @@ footer {
 
 /* Navbar links */
 .navbar a {
-    float: left; /* This specifies that the text floats on the left on the navbar */
+    float: inline-start; /* This specifies that the text floats on the left on the navbar */
     display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
     color: white; /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
@@ -123,6 +126,8 @@ footer {
     font-size: 20px;
     text-align: center;
     position: relative;
+    left: 40%;
+    border-radius: 5px;
     -webkit-animation: moveNavText 5.75s;
     animation: moveNavText 5.75s;
 }
