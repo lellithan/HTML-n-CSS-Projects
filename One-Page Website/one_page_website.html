@@ -3,7 +3,8 @@
 	<head>
 		<title>New Horizons Museum</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="../One-Page Website/CSS/one_page_website.css"
+		<link rel="stylesheet" href="../One-Page Website/CSS/one_page_website.css">
+		<script src="./JS/one-page-website.js" defer></script>
 	</head>
 	<body>
 	
@@ -35,12 +36,13 @@
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
+		<!--
 		<section>
 			<div id="gallery">
 				<h1>Gallery</h1>
 				<div>
 				
-					<!-- PHOTO-CONTAINER 1 -->
+					<!-- PHOTO-CONTAINER 1
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_1.png" alt="A picture of the front of our museum.">
@@ -52,7 +54,7 @@
 					</div>
 					<!-- END PHOTO-CONTAINER 1-->
 					
-					<!-- PHOTO-CONTAINER 2 -->
+					<!-- PHOTO-CONTAINER 2 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_2.png" alt="A picture of the interior foyer of the museum.">
@@ -62,9 +64,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 2-->
+					<!-- END PHOTO-CONTAINER 2
 					
-					<!-- PHOTO-CONTAINER 3 -->
+					<!-- PHOTO-CONTAINER 3 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_3.png" alt="Picture 1 of 3 of our walk through insect terarrium.">
@@ -74,9 +76,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 3-->
+					<!-- END PHOTO-CONTAINER 3
 					
-					<!-- PHOTO-CONTAINER 4 -->
+					<!-- PHOTO-CONTAINER 4 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_4.png" alt="Picture 2 of 3 of our walk through insect terarrium.">
@@ -86,9 +88,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 4-->
+					<!-- END PHOTO-CONTAINER 4
 					
-					<!-- PHOTO-CONTAINER 5 -->
+					<!-- PHOTO-CONTAINER 5 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_5.png" alt="Picture 3 of 3 of our walk through insect terarrium.">
@@ -98,9 +100,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 5-->
+					<!-- END PHOTO-CONTAINER 5
 					
-					<!-- PHOTO-CONTAINER 6 -->
+					<!-- PHOTO-CONTAINER 6 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_6.png" alt="A picture of a small portion of our aquarium section.">
@@ -110,9 +112,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 6-->
+					<!-- END PHOTO-CONTAINER 6
 					
-					<!-- PHOTO-CONTAINER 7 -->
+					<!-- PHOTO-CONTAINER 7 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_7.png" alt="A blast to the past with our fossil exhibit.">
@@ -122,9 +124,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 7-->
+					<!-- END PHOTO-CONTAINER 7
 					
-					<!-- PHOTO-CONTAINER 8 -->
+					<!-- PHOTO-CONTAINER 8 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_8.png" alt="A picture of our statue and ancient works display.">
@@ -134,9 +136,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 8-->
+					<!-- END PHOTO-CONTAINER 8
 					
-					<!-- PHOTO-CONTAINER 9 -->
+					<!-- PHOTO-CONTAINER 9 
 					<div>
 						<div>
 							<img src="./Images/Thumb/thumbnail_9.png" alt="A glimpse into our robust, iconic painting collection.">
@@ -146,10 +148,10 @@
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 9-->
+					<!-- END PHOTO-CONTAINER 9
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- END GALLERY -->
 		
 		<!-- RSVP -->
@@ -183,6 +185,72 @@
 			</div>
 		</section>
 		<!-- END VISIT US -->
+
+		<br>
+		<!-- LIGHTBOX DEMONSTRATION -->
+
+		<h1 style="font-weight: bolder; font-size: larger; text-align: center;">Lightbox</h1>
+		<div class="row">
+			<div class="column">
+			  <img src="./Images/Lightbox Resizes/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="./Images/Lightbox Resizes/thumbnail_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="./Images/Lightbox Resizes/thumbnail_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="./Images/Lightbox Resizes/thumbnail_4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+		  </div>
+
+		  <div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="./Images/Lightbox Resizes/plant1.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="./Images/Lightbox Resizes/plant2.png" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="./Images/Lightbox Resizes/plant3.png" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="./Images/Lightbox Resizes/plant4.png" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+		  
+			  <div class="column">
+				<img class="demo cursor" src="./Images/Lightbox Resizes/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="Pink">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./Images/Lightbox Resizes/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="Yellow">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./Images/Lightbox Resizes/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="Green">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./Images/Lightbox Resizes/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="White">
+			  </div>
+			</div>
+		  </div>
 		
 		<!-- FOOTER -->
 		<div>
